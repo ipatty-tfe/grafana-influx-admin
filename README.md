@@ -34,3 +34,5 @@ This plugin expects there to be at least one InfluxDB datasource configured.
 
 - First working version
 
+Original plugin by NatelEnergy
+

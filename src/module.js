@@ -84,8 +84,8 @@ class InfluxAdminCtrl extends PanelCtrl {
   }
 
   onInitEditMode() {
-    this.addEditorTab('Options', 'public/plugins/natel-influx-admin-panel/editor.html',1);
-    this.addEditorTab('Write Data', 'public/plugins/natel-influx-admin-panel/write.html',2);
+    this.addEditorTab('Options', 'public/plugins/grafana-influx-admin/editor.html',1);
+    this.addEditorTab('Write Data', 'public/plugins/grafana-influx-admin/write.html',2);
     this.editorTabIndex = 1;
   }
 
