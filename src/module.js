@@ -270,6 +270,10 @@ class InfluxAdminCtrl extends PanelCtrl {
     return false;
   }
 
+  getStringDate(number) {
+    return(new Date(number).toLocaleString())
+  }
+
   onClickedResult(res) {
     console.log( "CLICKED", this.panel.query, res );
 
@@ -315,7 +319,7 @@ class InfluxAdminCtrl extends PanelCtrl {
   doSubmit() {
 
     let q = this.querySeg.value;
-    this.panel.query = q;
+    // this.panel.query = q;
     console.log("doSubmit()", this );
 
     this.history.unshift( q );

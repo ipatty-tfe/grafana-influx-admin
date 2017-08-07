@@ -327,6 +327,11 @@ System.register(['app/core/config', 'app/core/app_events', 'app/plugins/sdk', 'l
             return false;
           }
         }, {
+          key: 'getStringDate',
+          value: function getStringDate(number) {
+            return new Date(number).toLocaleString();
+          }
+        }, {
           key: 'onClickedResult',
           value: function onClickedResult(res) {
             console.log("CLICKED", this.panel.query, res);
@@ -374,7 +379,7 @@ System.register(['app/core/config', 'app/core/app_events', 'app/plugins/sdk', 'l
             var _this7 = this;
 
             var q = this.querySeg.value;
-            this.panel.query = q;
+            // this.panel.query = q;
             console.log("doSubmit()", this);
 
             this.history.unshift(q);
