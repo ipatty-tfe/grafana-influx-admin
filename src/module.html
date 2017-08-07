@@ -72,10 +72,10 @@
           <tr ng-repeat="row in series.values track by $index">
             <td ng-repeat="col in row track by $index">
               <span ng-show="!ctrl.isClickableQuery()">
-                {{ col }} &nbsp;
+                {{ ($index == 0) ? ctrl.getStringDate(col) : col }} &nbsp;
               </span>
               <a ng-show="ctrl.isClickableQuery()" ng-click="ctrl.onClickedResult(row)">
-                {{ col }} &nbsp;
+                {{ ($index == 0) ? ctrl.getStringDate(col) : col }} &nbsp;
               </span>
             </td>
           </tr>

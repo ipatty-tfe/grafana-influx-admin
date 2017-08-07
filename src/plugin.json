@@ -1,7 +1,7 @@
 {
   "type": "panel",
   "name": "Influx Admin",
-  "id": "natel-influx-admin-panel",
+  "id": "grafana-influx-admin",
 
   "info": {
     "description": "InfluxDB admin for grafana",
